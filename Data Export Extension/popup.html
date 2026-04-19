@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChatGPT Conversation Saver</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <main class="popup">
+      <h1>Conversation Saver</h1>
+      <p class="subtitle">Save the current ChatGPT page and export your saved conversations as JSON.</p>
+      <button id="saveButton" type="button">Save Current Conversation</button>
+      <button id="downloadButton" type="button">Download Saved Conversations</button>
+      <p id="countLabel" class="count">Saved conversations: 0</p>
+      <p id="status" class="status" aria-live="polite"></p>
+    </main>
+    <script src="popup.js"></script>
+  </body>
+</html>

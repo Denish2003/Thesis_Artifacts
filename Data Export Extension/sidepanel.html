@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChatGPT Conversation Saver</title>
+    <link rel="stylesheet" href="sidepanel.css" />
+  </head>
+  <body>
+    <main class="panel">
+      <div class="panel-shell">
+        <section class="hero">
+          <p class="eyebrow">ChatGPT Archive</p>
+          <h1>Conversation Saver</h1>
+          <p class="subtitle">Capture the current chat, keep a running queue, and export everything to JSON when you are ready.</p>
+        </section>
+
+        <section class="stats-card" aria-label="Saved conversations summary">
+          <p class="stats-label">Saved conversations</p>
+          <p id="countLabel" class="count">0</p>
+          <p class="stats-note">Stored locally in this browser until download.</p>
+        </section>
+
+        <section class="actions" aria-label="Conversation actions">
+          <button id="saveButton" type="button">Save Current Conversation</button>
+          <button id="downloadButton" type="button">Download Saved Conversations</button>
+        </section>
+
+        <p id="status" class="status" aria-live="polite"></p>
+      </div>
+    </main>
+    <script src="sidepanel.js"></script>
+  </body>
+</html>
